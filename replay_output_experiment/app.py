@@ -7,9 +7,9 @@ from logging.config import dictConfig
 app = faust.App(
     version=1,  # fmt: off
     autodiscover=True,
-    origin="super_faust",
+    origin="replay_output_experiment",
     id="1",
-    broker="settings.KAFKA_BOOTSTRAP_SERVER",
+    broker=settings.KAFKA_BOOTSTRAP_SERVER,
     logging_config=dictConfig(settings.LOGGING),
 )
 
