@@ -5,8 +5,11 @@ SIMPLE_SETTINGS = {
 }
 
 # The following variables can be ovirriden from ENV
-KAFKA_BOOTSTRAP_SERVER = "kafka://kafka:9092"  # noqa: E999
+KAFKA_BOOTSTRAP_SERVER = "kafka://kafka:9092"
 # SCHEMA_REGISTRY_URL = "http://schema-registry:8081"
+
+BALANCES_TOPIC = "faust_bank_v1_balances"
+TRANSFERS_TOPIC = "faust_bank_v1_transfers"
 
 LOGGING = {
     "version": 1,

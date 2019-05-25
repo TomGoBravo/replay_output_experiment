@@ -38,3 +38,4 @@ list-topics:
 # Faust commands related
 send-page-view-event:
 	docker-compose exec -e SIMPLE_SETTINGS=replay_output_experiment.settings ${service} faust -A ${worker} send page_views '${payload}'
+

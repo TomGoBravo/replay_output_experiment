@@ -60,7 +60,7 @@ Basic Commands
 * Stop and remove containers: `make clean`
 * List topics: `make list-topics`
 * Send events to page_view topic/agent: `make send-page-view-event payload='{"id": "foo", "user": "bar"}'`
-  
+* Restart the application, leaving kafka up: `make restart`
 
 
 
@@ -92,6 +92,15 @@ Useful ENVIRONMENT variables that you may change:
 | SCHEMA_REGISTRY_URL | Schema Registry Server url | `http://schema-registry:8081` |
 
 
+
+Tests
+-----
+
+Run tests with `tox`. Make sure that you have installed it.
+
+```
+tox
+```
 
 Type checks
 -----------
